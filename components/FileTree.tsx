@@ -104,9 +104,9 @@ export default function FileTree() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <p className="text-sm text-[rgb(var(--variable))]">© 2025 RabbitHome. Crafted with heart.</p>
+              <p className="text-sm text-[rgb(var(--variable))]">© 2025 RabbitHome. Crafted with </p>
               <motion.svg
-              className="mx-1 w-6 h-6 text-red-500"
+              className="mx-1 w-6 h-6 text-red-500 inline"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="none"
