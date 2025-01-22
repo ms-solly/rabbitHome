@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 28, 28, 28;
+  --foreground: 212, 212, 212;
+  --keyword: 255, 121, 198;
+  --string: 139, 233, 153;
+  --function: 255, 184, 108;
+  --variable: 137, 221, 255;
+  --comment: 98, 114, 164;
+  --line-number: 68, 68, 68;
+  --status-bg: 40, 42, 54;
+  --active-line: 44, 44, 44;
+  --gutter: 33, 33, 33;
+}
+
+/* Vim-style selection */
+::selection {
+  background: rgba(var(--keyword), 0.3);
+}
+
+/* Vim-style cursor */
+.vim-cursor {
+  position: relative;
+}
+
+.vim-cursor::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 1.2em;
+  background-color: rgb(var(--foreground));
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* File tree styles */
+.file-tree {
+  background-color: rgb(var(--gutter));
+  border-right: 1px solid rgba(var(--foreground), 0.1);
+}
+
+.file-tree-item {
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.file-tree-item:hover {
+  background-color: rgba(var(--foreground), 0.05);
+}
+
+/* Status line styles */
+.status-line {
+  background-color: rgb(var(--status-bg));
+  border-top: 1px solid rgba(var(--foreground), 0.1);
+}
+
+/* Line number styles */
+.line-numbers {
+  color: rgb(var(--line-number));
+  text-align: right;
+  padding-right: 1rem;
+  user-select: none;
+}
+
+/* Syntax highlighting classes */
+.keyword {
+  color: rgb(var(--keyword));
+}
+.string {
+  color: rgb(var(--string));
+}
+.function {
+  color: rgb(var(--function));
+}
+.variable {
+  color: rgb(var(--variable));
+}
+.comment {
+  color: rgb(var(--comment));
+}
+
