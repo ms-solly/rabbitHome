@@ -8,7 +8,7 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata = {
   title: "rabbitHome",
-  description: "A Vim-inspired portfolio",
+  description: "Abhinav Patel's Portfolio",
 }
 
 export default function RootLayout({
@@ -22,14 +22,15 @@ export default function RootLayout({
         <link rel="icon" href="/rabbit.png" sizes="any" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={cn(geistMono.className, "bg-[#1c1c1c] text-[#d4d4d4] min-h-screen flex flex-col")}>
+      <body className={cn(geistMono.className, "bg-[#1c1c1cf0] text-[#e4e4e4] min-h-screen flex flex-col")}>        
         <div className="flex flex-1 overflow-hidden">
           <FileTree />
           <main className="flex-1 p-4 sm:p-6 pb-16 relative overflow-y-auto sm:ml-64">
             <div className="fixed inset-0 -z-10">
-              <img src="/rabbit.png" alt="Rabbit" className="object-cover w-full h-full opacity-20" />
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+              <img src="/bg.png" alt="Rabbit" className="object-cover w-full h-full opacity-20 blur-sm" />
             </div>
-            <div className="relative">{children}</div>
+            <div className="relative text-[#ffffffde] drop-shadow-md">{children}</div>
           </main>
         </div>
         <StatusLine />
@@ -37,4 +38,3 @@ export default function RootLayout({
     </html>
   )
 }
-

@@ -32,7 +32,7 @@ export default function FileTree() {
   ]
 
   return (
-    <>
+    <div>
       <AnimatePresence>
         {isMobile && (
           <motion.button
@@ -144,7 +144,7 @@ export default function FileTree() {
           </motion.div>
         )}
       </AnimatePresence>
-    </>
+    </div>
   )
 }
 

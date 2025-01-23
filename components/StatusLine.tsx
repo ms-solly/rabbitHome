@@ -29,7 +29,7 @@ import { Code, GitBranch, Clock } from "lucide-react"
 export default function StatusLine() {
   return (
     <motion.div
-      className="bg-[rgb(var(--gutter))] text-[rgb(var(--variable))] border-t border-[rgb(var(--foreground))]/15 py-2 px-4 flex justify-between items-center text-sm"
+      className="bg-[rgb(var(--gutter))] text-[rgb(var(--variable))] border-t border-[rgb(var(--foreground))]/15 py-2 px-4 flex justify-between items-center text-sm z-50"
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
