@@ -49,7 +49,7 @@ export default function About() {
                   ))}
                 </div>
               ))}
-               <p className="text-[rgb(var(--string))]">"Feel free to connect with me—whether it’s to discuss programming, physics, writing, or simply to share ideas. I'm always open to learning from others and exchanging knowledge.reach out to me via<Link href='/blog' className="text-[rgb(var(--variable))] hover:text-[rgb(var(--keyword))] underline transition">Contact</Link>"</p>
+               <p className="text-[rgb(var(--string))]">"Feel free to connect with me—whether it’s to discuss programming, physics, writing, or simply to share ideas. I'm always open to learning from others and exchanging knowledge.reach out to me via<Link href='/blog' className="text-[rgb(var(--variable))] hover:text-[rgb(var(--keyword))] underline transition mx-1">Contact</Link>"</p>
             </div>
           </div>
         </div>

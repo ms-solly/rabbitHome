@@ -28,7 +28,7 @@ export default function RootLayout({
           <main className="flex-1 p-4 sm:p-6 pb-16 relative overflow-y-auto sm:ml-64">
             <div className="fixed inset-0 -z-10">
               <div className="absolute inset-0 bg-black opacity-50"></div>
-              <img src="/bg.png" alt="Rabbit" className="object-cover w-full h-full opacity-20 blur-sm" />
+              <img src="/bg.png" alt="Rabbit" className="object-cover w-full h-full opacity-20 blur-sm fixed" />
             </div>
             <div className="relative text-[#ffffffde] drop-shadow-md">{children}</div>
           </main>
